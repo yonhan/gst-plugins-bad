@@ -21,4 +21,3 @@ gstrtmp2 = library('gstrtmp2',
   install_dir : plugins_install_dir,
 )
 pkgconfig.generate(gstrtmp2, install_dir : plugins_pkgconfig_install_dir)
-plugins += [gstrtmp2]
