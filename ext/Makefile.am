@@ -346,6 +346,12 @@ else
 RTMP_DIR =
 endif
 
+if USE_RTMP2
+RTMP2_DIR = rtmp2
+else
+RTMP2_DIR =
+endif
+
 if USE_HLS
 HLS_DIR = hls
 else
@@ -460,6 +466,7 @@ SUBDIRS=\
 	$(WILDMIDI_DIR) \
 	$(ZBAR_DIR) \
 	$(RTMP_DIR) \
+	$(RTMP2_DIR) \
 	$(HLS_DIR) \
 	$(WEBP_DIR) \
 	$(X265_DIR) \
@@ -528,6 +535,7 @@ DIST_SUBDIRS = \
 	voamrwbenc \
 	zbar \
 	rtmp \
+	rtmp2 \
 	webp \
 	x265 \
 	dtls \

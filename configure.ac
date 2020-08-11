@@ -2185,6 +2185,12 @@ AG_GST_CHECK_FEATURE(RTMP, [rtmp library], rtmp, [
   AG_GST_PKG_CHECK_MODULES(RTMP, librtmp)
 ])
 
+dnl *** rtmp2 ***
+translit(dnm, m, l) AM_CONDITIONAL(USE_RTMP2, true)
+AG_GST_CHECK_FEATURE(RTMP2, [rtmp2 library], rtmp2, [
+  AG_GST_PKG_CHECK_MODULES(RTMP2, librtmp2)
+])
+
 dnl *** spandsp ***
 translit(dnm, m, l) AM_CONDITIONAL(USE_SPANDSP, true)
 AG_GST_CHECK_FEATURE(SPANDSP, [Spandsp], spandsp, [
@@ -2391,6 +2397,7 @@ AM_CONDITIONAL(USE_SBC, false)
 AM_CONDITIONAL(USE_ZBAR, false)
 AM_CONDITIONAL(USE_RSVG, false)
 AM_CONDITIONAL(USE_RTMP, false)
+AM_CONDITIONAL(USE_RTMP2, false)
 AM_CONDITIONAL(USE_TELETEXTDEC, false)
 AM_CONDITIONAL(USE_UVCH264, false)
 AM_CONDITIONAL(USE_WEBP, false)
@@ -2673,6 +2680,7 @@ ext/opus/Makefile
 ext/rsvg/Makefile
 ext/resindvd/Makefile
 ext/rtmp/Makefile
+ext/rtmp2/Makefile
 ext/sbc/Makefile
 ext/sctp/Makefile
 ext/smoothstreaming/Makefile

@@ -128,6 +128,7 @@ option('opus', type : 'feature', value : 'auto', description : 'OPUS audio parse
 option('resindvd', type : 'feature', value : 'auto', description : 'Resin DVD playback plugin')
 option('rsvg', type : 'feature', value : 'auto', description : 'SVG overlayer and image decoder plugin')
 option('rtmp', type : 'feature', value : 'auto', description : 'RTMP video network source and sink plugin')
+option('rtmp2', type : 'feature', value : 'auto', description : 'RTMP2 video network source and sink plugin')
 option('sbc', type : 'feature', value : 'auto', description : 'SBC bluetooth audio codec plugin')
 option('sctp', type : 'feature', value : 'auto', description : 'SCTP plugin')
 option('shm', type : 'feature', value : 'auto', description : 'Shared memory source/sink plugin')
