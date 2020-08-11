@@ -2187,9 +2187,6 @@ AG_GST_CHECK_FEATURE(RTMP, [rtmp library], rtmp, [
 
 dnl *** rtmp2 ***
 translit(dnm, m, l) AM_CONDITIONAL(USE_RTMP2, true)
-AG_GST_CHECK_FEATURE(RTMP2, [rtmp2 library], rtmp2, [
-  AG_GST_PKG_CHECK_MODULES(RTMP2, librtmp2)
-])
 
 dnl *** spandsp ***
 translit(dnm, m, l) AM_CONDITIONAL(USE_SPANDSP, true)
